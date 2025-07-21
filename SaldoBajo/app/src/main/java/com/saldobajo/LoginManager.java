@@ -20,7 +20,7 @@ public class LoginManager {
         String captchaText = ocr.extractText(captchaBitmap);
 
         if (captchaText == null || captchaText.trim().length() < 4) {
-            AlertUtil.showToast(context, "❌ Captcha ilegible. Revisa manualmente.");
+            AlertUtil.showToast(context, "❌ Captcha ilegible.");
             return;
         }
 
